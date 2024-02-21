@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 /* GET current year. */
-router.get('/year', function(req, res, next) {
+router.get('/', function(req, res, next) {
     const today = new Date();
     const currentYear = today.getFullYear();
     
